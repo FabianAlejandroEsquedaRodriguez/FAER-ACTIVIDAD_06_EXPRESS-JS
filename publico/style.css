@@ -1,0 +1,104 @@
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-image: url('https://fondosmil.com/fondo/17010.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+h2{
+    font-size: 18px;
+    padding: 10px 20px;
+    color: #575ed8;
+}
+
+#chat-fabian{/*Toda la estructura de chat*/
+    width: 600px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* max-width: 600px; */
+    /* margin: 50px auto; */
+    border-radius: 10px;
+    box-shadow: 1px 3px 5px rgba(0,0,0,0.05);
+    padding: 2px;
+}
+
+#ventana{
+    height: 400px;
+    overflow: auto;
+    background: #e2e2e2;
+    margin-bottom: 5px;
+    border-radius: 10px;
+    border: 1px solid #000;
+}
+
+#salida p{
+    padding: 14px 0px;
+    margin: 0 20px;
+    border-bottom: 1px solid #e9e9e9;
+    color: #555;
+}
+
+#feedback p{
+    color: #aaa;
+    padding: 14px 0px;
+    margin: 0 20px;
+}
+
+#salida strong{
+    color: #575ed8;
+}
+
+label{
+    box-sizing: border-box;
+    display: block;
+    padding: 10px 20px;
+}
+
+input{
+    padding: 10px 20px;
+    box-sizing: border-box;
+    background: #eee;
+    border: 0;
+    display: block;
+    width: 100%;
+    background: #fff;
+    border: 1px solid #000;
+    /* border-bottom: 1px solid #eee; */
+    font-size: 16px;
+    border-radius: 10px;
+}
+#handle {
+    margin-bottom: 5px;
+}
+
+button{
+    background: #575ed8;
+    color: #fff;
+    font-size: 16px;
+    border: 0;
+    padding: 12px 0;
+    width: fit-content;
+    border-radius: 0 0 2px 2px;
+    cursor: pointer;
+    border-radius: 10px;
+    margin-left: 5px;
+}
+button:hover {
+    background-color: #555;
+}
+
+#boxM {
+    display: flex;
+}
+
+@media screen and (max-width: 645px) {
+    body {
+        background-image: none;
+        background-color: rgb(7, 19, 44);
+    }
+    #chat-fabian {
+        width: 95%;
+    }
+}
